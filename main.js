@@ -1,4 +1,12 @@
 (function () {
+  var localVideo = document.querySelector(".video-frame__el");
+  var videoFallback = document.getElementById("video-fallback");
+  if (localVideo && videoFallback) {
+    localVideo.addEventListener("error", function () {
+      videoFallback.hidden = false;
+    });
+  }
+
   var galleryButtons = document.querySelectorAll("[data-gallery-open]");
   var lightbox = document.getElementById("lightbox");
   if (!lightbox || !galleryButtons.length) return;

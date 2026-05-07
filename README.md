@@ -7,8 +7,8 @@ Site statique pour présenter un appartement à louer. Aucune étape de build : 
 - `index.html` — page unique
 - `styles.css` — mise en page responsive
 - `main.js` — galerie (agrandissement des photos)
-- `images/` — photos (`CONTENT.md` explique comment les remplacer)
-- `CONTENT.md` — checklist et formats `tel` / `mailto` / WhatsApp
+- `images/` — photos du logement
+- `videos/` — vidéo de visite (`visite.mov`)
 
 ## Publier sur GitHub Pages
 
@@ -37,4 +37,4 @@ Après une à deux minutes, le site est accessible à :
 
 ## Contact
 
-Les boutons utilisent des **liens directs** (`tel:`, `mailto:`, WhatsApp), sans formulaire ni backend — adapté à GitHub Pages. Pour un formulaire par email, vous pouvez plus tard intégrer un service tiers (Formspree, etc.) en modifiant `index.html`.
+Les boutons utilisent des liens directs **WhatsApp** et **téléphone** (`tel:`), sans backend — adapté à GitHub Pages. Modifiez les numéros dans `index.html` si besoin.
