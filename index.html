@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Appartement à louer — annonce et contact."
+    />
+    <title>Location — Appartement</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="wrap site-header__inner">
+        <p class="site-title">Location</p>
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="#annonce">Annonce</a>
+          <a href="#photos">Photos</a>
+          <a href="#infos">Infos</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section class="hero" id="annonce" aria-labelledby="hero-title">
+        <div class="hero__media">
+          <img
+            src="images/hero.jpg"
+            alt=""
+            width="1600"
+            height="900"
+            class="hero__img"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero__overlay">
+          <div class="wrap hero__content">
+            <p class="hero__badge">Disponible à la location</p>
+            <h1 id="hero-title" class="hero__title">
+              Appartement lumineux, quartier calme
+            </h1>
+            <p class="hero__meta">
+              <span class="hero__price" data-placeholder="loyer">850&nbsp;000&nbsp;FCFA</span>
+              <span class="hero__sep">·</span>
+              <span data-placeholder="surface">72&nbsp;m²</span>
+              <span class="hero__sep">·</span>
+              <span data-placeholder="pieces">3&nbsp;pièces</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="photos" aria-labelledby="photos-title">
+        <div class="wrap">
+          <h2 id="photos-title" class="section__title">Photos</h2>
+          <p class="section__lead">
+            Remplacez ces images par vos fichiers dans le dossier <code>images/</code>
+            (voir <a href="CONTENT.md">CONTENT.md</a>).
+          </p>
+          <div class="gallery" role="list">
+            <button type="button" class="gallery__item" role="listitem" data-gallery-open="0" aria-label="Agrandir la photo 1">
+              <img src="images/gallery-01.jpg" alt="Salon" width="800" height="600" loading="lazy" />
+            </button>
+            <button type="button" class="gallery__item" role="listitem" data-gallery-open="1" aria-label="Agrandir la photo 2">
+              <img src="images/gallery-02.jpg" alt="Cuisine" width="800" height="600" loading="lazy" />
+            </button>
+            <button type="button" class="gallery__item" role="listitem" data-gallery-open="2" aria-label="Agrandir la photo 3">
+              <img src="images/gallery-03.jpg" alt="Chambre" width="800" height="600" loading="lazy" />
+            </button>
+            <button type="button" class="gallery__item" role="listitem" data-gallery-open="3" aria-label="Agrandir la photo 4">
+              <img src="images/gallery-04.jpg" alt="Salle de bains" width="800" height="600" loading="lazy" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="description">
+        <div class="wrap prose">
+          <h2 class="section__title">Description</h2>
+          <p>
+            Bel appartement traversant, fenêtres double orientation, parquet dans les chambres,
+            cuisine équipée (plaques, four, hotte). Cave et place de parking incluse dans la copropriété.
+          </p>
+          <p>
+            Quartier résidentiel avec commerces à pied, transports à proximité. Idéal pour un couple ou une petite famille.
+          </p>
+          <h3 class="prose__sub">Équipements</h3>
+          <ul class="checks">
+            <li>Cuisine équipée</li>
+            <li>Eau chaude collective</li>
+            <li>Fibre / prêt pour box internet</li>
+            <li>Interphone</li>
+            <li>Parking</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="infos" aria-labelledby="infos-title">
+        <div class="wrap">
+          <h2 id="infos-title" class="section__title">Informations pratiques</h2>
+          <dl class="facts">
+            <div class="facts__row">
+              <dt>Loyer</dt>
+              <dd data-placeholder="loyer">850&nbsp;000&nbsp;FCFA / mois</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Charges</dt>
+              <dd>Incluses (à préciser)</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Caution</dt>
+              <dd>2 mois de loyer</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Surface</dt>
+              <dd>72&nbsp;m²</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Pièces</dt>
+              <dd>3 — salon, 2 chambres</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Étage</dt>
+              <dd>3<sup>e</sup> étage avec ascenseur</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Disponibilité</dt>
+              <dd>À partir du 1<sup>er</sup> du mois prochain</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Durée minimale</dt>
+              <dd>12 mois</dd>
+            </div>
+          </dl>
+          <p class="section__note">
+            <a href="https://www.google.com/maps" rel="noopener noreferrer">Voir le quartier sur la carte</a>
+            — remplacez ce lien par une recherche Google Maps ou une adresse approximative.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--cta" id="contact" aria-labelledby="contact-title">
+        <div class="wrap">
+          <h2 id="contact-title" class="section__title section__title--light">
+            Contact
+          </h2>
+          <p class="section__lead section__lead--light">
+            Liens directs (sans formulaire) — modifiez téléphone et email dans
+            <a href="CONTENT.md">CONTENT.md</a>.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn--primary" href="tel:+24100000000">Appeler</a>
+            <a class="btn btn--ghost" href="mailto:contact@example.com">Écrire un email</a>
+            <a
+              class="btn btn--ghost"
+              href="https://wa.me/241000000000"
+              rel="noopener noreferrer"
+              >WhatsApp</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap site-footer__inner">
+        <p>Annonce informative — visite sur rendez-vous.</p>
+      </div>
+    </footer>
+
+    <div
+      class="lightbox"
+      id="lightbox"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-label="Agrandissement photo"
+    >
+      <button type="button" class="lightbox__close" aria-label="Fermer">&times;</button>
+      <img class="lightbox__img" alt="" src="" width="1600" height="1200" />
+    </div>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
